@@ -1,0 +1,4 @@
+{
+  "jwtSecret": "myjwtSecret",
+  "postgresPassword": "BIRAPOMSosei1!"
+}
