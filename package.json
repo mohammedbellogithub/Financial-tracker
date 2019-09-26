@@ -2,7 +2,7 @@
   "name": "financial-tracker",
   "version": "1.0.0",
   "engines": {
-    "node": "10.18.0"
+    "node": "10.16.0"
   },
   "description": "* Installation Guide\r   - Your need a server, download node.js\r   - You need a DATABASE MANAGEMENT SYSTEM (DBMS), download postgres\r   - Fork the repository and push to your `staging branch`\r   - Go to command prompt and run `npm init` to download all dependencies\r   - Merge to your `master` and compare forks with the original repository\r   - Open a Pull Request\r   - Create a database with postgres `fin_tracker` and run `npm run build` command prompt\r   - Finally run `npm run server`",
   "main": "server.js",
