@@ -1,0 +1,34 @@
+{
+  "name": "financial-tracker",
+  "version": "1.0.0",
+  "description": "* Installation Guide\r   - Your need a server, download node.js\r   - You need a DATABASE MANAGEMENT SYSTEM (DBMS), download postgres\r   - Fork the repository and push to your `staging branch`\r   - Go to command prompt and run `npm init` to download all dependencies\r   - Merge to your `master` and compare forks with the original repository\r   - Open a Pull Request\r   - Create a database with postgres `fin_tracker` and run `npm run build` command prompt\r   - Finally run `npm run server`",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "build": "node ./Financaial-tracker/server/Schema/createTable.js",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenkoce/Financial-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^1.19.2",
+    "pg": "^7.12.1"
+  },
+  "bugs": {
+    "url": "https://github.com/kenkoce/Financial-tracker/issues"
+  },
+  "homepage": "https://github.com/kenkoce/Financial-tracker#readme"
+}
