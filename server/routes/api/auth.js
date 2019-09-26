@@ -136,8 +136,8 @@ router.get("/signin", auth, async (req, res) => {
       "SELECT user_id,full_name,email,date_created FROM users WHERE user_id = $1",
       [req.user]
     );
-    if ((user = "")) {
-      res.status(400).json({ msg: "Not a Valid" });
+    if (user === "") {
+      res.status(400).json({ msg: "Not a Valid User" });
     }
     res.json(user);
   } catch (error) {
