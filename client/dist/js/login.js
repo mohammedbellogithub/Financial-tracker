@@ -12,7 +12,7 @@ document.getElementById("sumbit").addEventListener("click", e => {
 
   fetchAPI.post("/auth/signin", body, ({ data, status }) => {
     if (status === 400) {
-      const responseErr = data.errors[0].msg;
+      const responseErr = data.msg;
       showError(alert, responseErr);
     } else if (status === 200) {
       localStorage.setItem("token", data.token);

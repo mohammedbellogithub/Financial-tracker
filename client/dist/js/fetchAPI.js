@@ -77,7 +77,7 @@ class FetchAPI {
 
     await fetch(BASE_URL + url, {
       method: "DELETE",
-      headers: header
+      headers: h
     })
       .then(async response => {
         return {

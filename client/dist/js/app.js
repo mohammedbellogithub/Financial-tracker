@@ -45,12 +45,22 @@ function getClickedId(event, clickedId, page) {
 function logout() {
   localStorage.removeItem("token");
   localStorage.removeItem("userId");
-  localStorage.removeItem("clickedProfile");
+  localStorage.removeItem("clickedItem");
+  location.href = "login.html";
 }
 
 function deleteUser() {
   confirm("Are you sure you want do this?");
   fetchAPI.delete("/auth", ({ data, status }) => {
-    logout();
+    if (status === 200) {
+      logout();
+    }
   });
+}
+
+// Check Token
+function checkToken(data) {
+  if (data.msg === "Token Not Valid") {
+    logout();
+  }
 }

@@ -150,6 +150,7 @@ router.get("/signin", auth, async (req, res) => {
 // @access Private
 router.delete("/", auth, async (req, res) => {
   try {
+    await queryData("DELETE FROM items WHERE user_id = $1", [req.user]);
     await queryData("DELETE FROM users WHERE user_id = $1", [req.user]);
     res.json({ msg: "User Deleted" });
   } catch (error) {
