@@ -10,8 +10,6 @@
     "start": "node server",
     "build": "node ./Schema/createTable.js",
     "server": "nodemon server",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "npm run build"
   },
   "repository": {

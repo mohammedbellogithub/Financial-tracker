@@ -1,6 +1,6 @@
 const h = new Headers();
 
-const BASE_URL = "/api";
+const BASE_URL = "http://localhost:7000/api";
 
 const token = localStorage.getItem("token");
 h.append("Content-type", "application/json");
