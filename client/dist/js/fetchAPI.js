@@ -1,5 +1,7 @@
 const h = new Headers();
+
 const BASE_URL = "/api";
+
 const token = localStorage.getItem("token");
 h.append("Content-type", "application/json");
 h.append("x-auth-token", token);
