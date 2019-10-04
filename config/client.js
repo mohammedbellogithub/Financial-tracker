@@ -12,7 +12,11 @@ const db = {
 };
 const client = new Client(db);
 const connectClient = async () => {
-  await client.connect();
+  try {
+    await client.connect();
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 connectClient();
