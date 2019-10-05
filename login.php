@@ -117,7 +117,7 @@
 			    	 	<input type="Email" class="form-control curve" name="email" style=" width: 80%; color: grey; padding: 10px;">
 			    	</div>
 				    <div class="form-group" style="width: 500px;">
-				    	<label>Password</label><a href="forgotpass.php" style="margin-left: 14%; position: absolute;"><small>forgot your password?</small></a>
+				    	<label>Password</label><a href="./forgotpass.php" style="margin-left: 14%; position: absolute;"><small>forgot your password?</small></a>
 				    	<i class="fa fa-eye" style="position: absolute; padding: 34px; min-width: 40px; color: grey; margin-left: 18%;"></i>
 			    	 	<input type="password" class="form-control curve" name="password" style=" width: 80%; padding: 10px;">
 			    	</div>
