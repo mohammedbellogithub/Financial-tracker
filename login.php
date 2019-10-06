@@ -81,6 +81,7 @@
 <center><h6 style="color: white; font-size: 1.5rem;">world knowledge or any</h6></center>
 <center><h6 style="color: white; font-size: 1.5rem;">understanding of governance, proper</h6></center>
 <center><h6 style="color: white; font-size: 1.5rem;">planning and policy</h6></center>
+<center><h6 style="color: white; font-size: 1.5rem;"><a href="./what we do.html"><button>More info</button></a></h6></center>
 	</div>
 	<style>
 				.vl {
